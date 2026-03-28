@@ -27,4 +27,4 @@ RESTful API for managing tasks with CRUD operations.
 1. Clone: `git clone https://github.com/akinlade-dev/task-manager-api.git`
 2. Install: `npm install`
 3. Start: `npm start`
-4. Test: Visit `https://task-manager-api-bt1u.onrender.com/tasks`
+4. Test: Visit `http://localhost:3000/tasks`
