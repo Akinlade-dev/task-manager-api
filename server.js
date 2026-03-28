@@ -4,6 +4,19 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Task Manager API',
+    endpoints: {
+      getAllTasks: 'GET /tasks',
+      getTask: 'GET /tasks/:id',
+      createTask: 'POST /tasks',
+      updateTask: 'PUT /tasks/:id',
+      deleteTask: 'DELETE /tasks/:id'
+    }
+  });
+});
+
 let tasks = [
   { id: 1, title: 'Learn Node.js', status: 'in-progress' },
   { id: 2, title: 'Build API', status: 'done' }
